@@ -59,40 +59,43 @@ document.addEventListener('DOMContentLoaded', function () {
     productSelect.value = requestedProduct;
   }
 
-  var submitBtn = document.getElementById('briefSubmitBtn');
-  var errorMsg = document.getElementById('briefError');
-  var formWrap = document.getElementById('briefFormWrap');
   var successPanel = document.getElementById('briefSuccess');
-  var downloadLink = document.getElementById('briefDownloadLink');
 
+  // The real Formspree endpoint isn't set up yet, so submitting would just fail
+  // with a confusing "form not found" error. Show a plain work-in-progress
+  // notice instead until a real backend (Azure) is wired up here.
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    errorMsg.style.display = 'none';
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Submitting...';
+    form.style.display = 'none';
+    successPanel.style.display = 'block';
+  });
+});
 
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { Accept: 'application/json' }
-    })
-      .then(function (response) {
-        if (!response.ok) throw new Error('Form submission failed');
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('resumeForm');
+  if (!form) return;
 
-        var pdfPath = PDF_BY_PRODUCT[productSelect.value];
-        downloadLink.setAttribute('href', pdfPath);
+  var successPanel = document.getElementById('resumeSuccess');
 
-        form.style.display = 'none';
-        successPanel.style.display = 'block';
+  // Same work-in-progress stand-in as the other forms — see comment above.
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    form.style.display = 'none';
+    successPanel.style.display = 'block';
+  });
+});
 
-        // Kick off the download automatically as soon as it unlocks.
-        downloadLink.click();
-      })
-      .catch(function () {
-        errorMsg.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Download';
-      });
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+
+  var wipPanel = document.getElementById('contactWip');
+
+  // Same work-in-progress stand-in as the other forms — see comment above.
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    form.style.display = 'none';
+    wipPanel.style.display = 'block';
   });
 });
 

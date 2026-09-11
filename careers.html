@@ -91,12 +91,53 @@
   </div>
 </section>
 
-<section style="padding: 64px 0; background: var(--bg-soft);">
-  <div class="container reveal" style="text-align: center; max-width: 560px; margin: 0 auto;">
-    <h2 style="font-size: clamp(22px, 2.6vw, 28px);">Interested in Joining Us?</h2>
-    <p style="margin-top: 14px; font-size: 15.5px; line-height: 1.6; color: var(--text-dim);">Open roles will be posted here soon. In the meantime, reach out and introduce yourself.</p>
-    <div style="display: flex; gap: 14px; margin-top: 26px; justify-content: center; flex-wrap: wrap;">
-      <a href="contact.html" class="btn btn-primary">Explore Careers</a>
+<section id="resume" style="padding: 64px 0; background: var(--bg-soft);">
+  <div class="container two-col-form">
+    <div>
+      <div class="eyebrow">Join Us</div>
+      <h2 style="font-size: clamp(22px, 2.6vw, 28px); margin-top: 12px;">Submit Your Resume</h2>
+      <p style="margin-top: 16px; font-size: 15px; line-height: 1.6; color: var(--text-dim); max-width: 380px;">
+        Open roles will be posted here soon. In the meantime, upload your resume and our team will reach out when a fit comes up.
+      </p>
+    </div>
+
+    <div id="resumeFormWrap" class="reveal">
+      <form id="resumeForm" action="https://formspree.io/f/YOUR_RESUME_FORM_ID" method="POST" enctype="multipart/form-data" class="card" style="padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+        <div class="field-row">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" name="first_name" placeholder="Jane" required>
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Doe" required>
+          </div>
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="jane@company.com" required>
+        </div>
+        <div class="field">
+          <label>Role You're Interested In</label>
+          <input type="text" name="role_interest" placeholder="e.g. Analog Design Engineer">
+        </div>
+        <div class="field">
+          <label>Resume</label>
+          <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+        </div>
+        <div class="field">
+          <label>Message (Optional)</label>
+          <textarea rows="3" name="message" placeholder="Anything else you'd like us to know..."></textarea>
+        </div>
+        <label class="checkbox-row"><input type="checkbox" style="margin-top: 2px;" required> I have read and agree to the Privacy Policy.</label>
+        <button type="submit" id="resumeSubmitBtn" class="btn btn-primary" style="justify-content: center; margin-top: 6px; border: none; font-family: inherit;">Submit Resume</button>
+        <p id="resumeError" style="display: none; font-size: 13px; color: #C0392B; margin: 0;">Something went wrong submitting the form. Please try again.</p>
+      </form>
+
+      <div id="resumeSuccess" class="card" style="display: none; padding: 40px; text-align: center;">
+        <h3 style="font-size: 20px; font-weight: 600;">This Form Isn't Live Yet</h3>
+        <p style="margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim);">We're still setting up resume submissions. Please check back soon.</p>
+      </div>
     </div>
   </div>
 </section>

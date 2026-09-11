@@ -67,25 +67,32 @@
       </div>
     </div>
 
-    <form onsubmit="return false;" class="card reveal" style="padding: 30px; display: flex; flex-direction: column; gap: 16px;">
-      <div class="field">
-        <label>Name</label>
-        <input type="text" placeholder="Jane Doe">
+    <div id="contactFormWrap" class="reveal">
+      <form id="contactForm" class="card" style="padding: 30px; display: flex; flex-direction: column; gap: 16px;">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Jane Doe">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="jane@company.com">
+        </div>
+        <div class="field">
+          <label>Company</label>
+          <input type="text" name="company" placeholder="Company name">
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea rows="4" name="message" placeholder="Tell us about your program..."></textarea>
+        </div>
+        <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="justify-content: center; margin-top: 6px; border: none; font-family: inherit;">Send Message</button>
+      </form>
+
+      <div id="contactWip" class="card" style="display: none; padding: 40px; text-align: center;">
+        <h3 style="font-size: 20px; font-weight: 600;">This Form Isn't Live Yet</h3>
+        <p style="margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim);">We're still setting up our contact form. Please check back soon.</p>
       </div>
-      <div class="field">
-        <label>Email</label>
-        <input type="email" placeholder="jane@company.com">
-      </div>
-      <div class="field">
-        <label>Company</label>
-        <input type="text" placeholder="Company name">
-      </div>
-      <div class="field">
-        <label>Message</label>
-        <textarea rows="4" placeholder="Tell us about your program..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="justify-content: center; margin-top: 6px; border: none; font-family: inherit;">Send Message</button>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -155,9 +162,8 @@
       </form>
 
       <div id="briefSuccess" class="card" style="display: none; padding: 40px; text-align: center;">
-        <h3 style="font-size: 20px; font-weight: 600;">Thanks — Your Download Is Ready</h3>
-        <p style="margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim);">We've sent a copy of your request to our team. Click below to download your product brief.</p>
-        <a id="briefDownloadLink" href="#" download class="btn btn-primary" style="margin-top: 20px;">Download PDF</a>
+        <h3 style="font-size: 20px; font-weight: 600;">This Form Isn't Live Yet</h3>
+        <p style="margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: var(--text-dim);">We're still setting up automatic downloads. Please check back soon.</p>
       </div>
     </div>
   </div>
