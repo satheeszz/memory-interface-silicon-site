@@ -14,18 +14,21 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand">
-      <img src="assets/img/fea-logo.png" alt="ForwardEdge ASIC">
-      <span class="brand-text">
-        <span class="brand-name"><span class="fw">ForwardEdge</span><span class="asic">ASIC</span></span>
-        <span class="brand-tag">A LOCKHEED MARTIN COMPANY</span>
-      </span>
-    </a>
+    <div class="brand">
+      <div class="brand-row">
+        <a href="https://forwardedgeasic.com/" class="brand-link" target="_blank" rel="noopener">
+          <img src="assets/img/fea-logo.png" alt="ForwardEdge ASIC">
+          <span class="brand-name"><span class="fw">ForwardEdge</span><span class="asic">ASIC</span></span>
+        </a>
+        <span class="brand-division">Memory Division</span>
+      </div>
+      <span class="brand-tag">A LOCKHEED MARTIN COMPANY</span>
+    </div>
     <nav class="nav-desktop">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html" class="active">About Us</a>
       <a href="products.html">Products</a>
-      <a href="careers.html">Careers</a>
       <a href="blogs.html">Blogs</a>
+      <a href="ko/index.html" style="color: var(--text-faint); font-size: 13.5px;">한국어</a>
       <a href="contact.html" class="btn btn-primary" style="padding:10px 18px;">Contact Us</a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu">
@@ -33,10 +36,10 @@
     </button>
   </div>
   <div class="nav-mobile-panel">
-    <a href="index.html" class="nav-mobile-link">Home</a>
+    <a href="index.html" class="nav-mobile-link">About Us</a>
     <a href="products.html" class="nav-mobile-link">Products</a>
-    <a href="careers.html" class="nav-mobile-link">Careers</a>
     <a href="blogs.html" class="nav-mobile-link">Blogs</a>
+    <a href="ko/index.html" class="nav-mobile-link">한국어</a>
     <a href="contact.html" class="btn btn-primary" style="margin-top:14px; justify-content:center;">Contact Us</a>
   </div>
 </header>
@@ -45,7 +48,8 @@
 <section class="hero-dotgrid" style="padding: 72px 0 56px; border-bottom: 1px solid var(--border);">
   <div class="container two-col" style="align-items: center;">
     <div>
-      <h1 style="font-size: clamp(32px, 4.4vw, 46px); line-height: 1.1; font-weight: 800;">Defense-Grade Discipline, <span style="color: var(--accent);">Built for DDR5 Memory.</span></h1>
+      <div class="eyebrow">Memory Division</div>
+      <h1 style="font-size: clamp(32px, 4.4vw, 46px); line-height: 1.1; font-weight: 800; margin-top: 10px;">Defense-Grade Discipline, <span style="color: var(--accent);">Built for DDR5 Memory.</span></h1>
       <p style="margin-top: 22px; font-size: 16.5px; line-height: 1.6; color: var(--text-dim);">
         As AI, cloud, defense, and secure-infrastructure workloads push DDR5 memory bandwidth, capacity, and security requirements to new levels, ForwardEdge brings a Lockheed-influenced, defense-grade engineering mindset to the memory interface market — starting with JEDEC Compliant SPD and Temperature Sensor, and roadmap expanding towards RCD, PMIC, and Clock Driver.
       </p>
@@ -95,6 +99,73 @@
     <div style="display: flex; gap: 14px; margin-top: 26px; justify-content: center; flex-wrap: wrap;">
       <a href="contact.html#brief" class="btn btn-primary">Get a Product Brief</a>
       <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 64px 0;">
+  <div class="container">
+    <div class="eyebrow">Our Leadership</div>
+    <h2 style="font-size: clamp(24px, 3vw, 30px); margin-top: 12px;">Experience and Integrity at the Helm.</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 24px; margin-top: 36px;">
+
+      <div class="card reveal leader-card" style="padding: 28px;">
+        <div class="leader-photo" style="border-radius: 8px; overflow: hidden; background: var(--bg-soft); border: 1px solid var(--border);">
+          <img src="assets/img/leader-aws-shallal.png" alt="Aws Shallal" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 600; color: var(--accent);">Aws Shallal</h3>
+          <div class="mono" style="margin-top: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint);">GM, Memory Division</div>
+          <a href="https://www.linkedin.com/in/aws-shallal/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 10px; background: var(--accent); border-radius: 3px; color: #fff;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.7 8.59 23 10.9 23 14.34V21h-4v-5.8c0-1.38-.02-3.16-1.93-3.16-1.93 0-2.23 1.5-2.23 3.06V21h-4V9Z"></path></svg>
+          </a>
+          <p style="margin-top: 14px; font-size: 14.5px; line-height: 1.7; color: var(--text-dim);">Aws brings more than 20 years of silicon architecture and design leadership spanning memory, high-speed SerDes, and network transport ASICs. Prior to ForwardEdge, Aws was Technical Director of ASIC Design at Rambus, where he architected the industry's JEDEC/MIPI I3C memory side-band bus, led a multi-site 400/800/1600G retimer program in TSMC 7nm supporting 25G NRZ and 56/112G PAM4 SerDes, and delivered a DDR4 Non-Volatile DIMM solution now deployed at one of the world's largest cloud computing companies. Earlier in his career, Aws held architecture and design leadership roles at Inphi, Cortina Systems, Intel, and Nortel Networks, where he built and shipped transport framer ASICs generating over $500M in revenue. He is an active contributor to JEDEC memory standards and holds numerous proprietary silicon disclosures. At ForwardEdge, Aws leads the Memory Division, setting engineering and product strategy for the company's next-generation memory silicon and IP.</p>
+        </div>
+      </div>
+
+      <div class="card reveal leader-card" style="padding: 28px;">
+        <div class="leader-photo" style="border-radius: 8px; overflow: hidden; background: var(--bg-soft); border: 1px solid var(--border);">
+          <img src="assets/img/leader-weifeng-zhao.jpg" alt="Weifeng (Winston) Zhao" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 600; color: var(--accent);">Weifeng (Winston) Zhao</h3>
+          <div class="mono" style="margin-top: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint);">SVP of IC Operations, Memory Division</div>
+          <a href="https://www.linkedin.com/in/weifeng-winston-zhao-phd-5a2a066/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 10px; background: var(--accent); border-radius: 3px; color: #fff;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.7 8.59 23 10.9 23 14.34V21h-4v-5.8c0-1.38-.02-3.16-1.93-3.16-1.93 0-2.23 1.5-2.23 3.06V21h-4V9Z"></path></svg>
+          </a>
+          <p style="margin-top: 14px; font-size: 14.5px; line-height: 1.7; color: var(--text-dim);">Weifeng (Winston) Zhao is Senior Vice President of IC Operations for the Memory Division at ForwardEdge ASIC, a Lockheed Martin company. He brings more than 20 years of semiconductor industry experience in foundry engineering, product/test engineering, reliability, manufacturing, and supply chain management. Winston leads global operations for DDR5 and DDR6 memory-interface products, driving product development, qualification, production ramp, yield, quality, and supply continuity. Previously, he held leadership positions at Rambus, Aquantia (now part of Marvell), Samsung, and PDF Solutions, with a strong track record of building high performing engineering teams and bringing advanced semiconductor products to high volume production. He holds a Ph.D. in Electrical and Computer Engineering from the University of Illinois Urbana-Champaign and has contributed to more than 20 publications, conference presentations, and patents.</p>
+        </div>
+      </div>
+
+      <div class="card reveal leader-card" style="padding: 28px;">
+        <div class="leader-photo" style="border-radius: 8px; overflow: hidden; background: var(--bg-soft); border: 1px solid var(--border);">
+          <img src="assets/img/leader-brad-chung.jpg" alt="Brad Chung" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 600; color: var(--accent);">Brad Chung</h3>
+          <div class="mono" style="margin-top: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint);">VP, Worldwide Marketing &amp; Sales</div>
+          <a href="#" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 10px; background: var(--accent); border-radius: 3px; color: #fff;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.7 8.59 23 10.9 23 14.34V21h-4v-5.8c0-1.38-.02-3.16-1.93-3.16-1.93 0-2.23 1.5-2.23 3.06V21h-4V9Z"></path></svg>
+          </a>
+          <p style="margin-top: 14px; font-size: 14.5px; line-height: 1.7; color: var(--text-dim);">Brad Chung is VP, Worldwide Marketing &amp; Sales at ForwardEdge ASIC's Memory Division. Starting his career at Samsung Electronics and continuing through leadership roles at global technology companies including ICS (Integrated Circuit Systems), IDT, Inphi, and Rambus, Brad has specialized in promoting and selling high-performance semiconductor products — particularly SSTL bus interfaces — to major DRAM makers across DDR1 through DDR4 generations. At ForwardEdge, Brad is engaging in JEDEC activities as part of his role as VP, Worldwide Sales and Marketing, bringing a passionate and proven track record as a sales leader in the semiconductor industry.</p>
+        </div>
+      </div>
+
+      <div class="card reveal leader-card" style="padding: 28px;">
+        <div class="leader-photo" style="border-radius: 8px; overflow: hidden; background: var(--bg-soft); border: 1px solid var(--border);">
+          <img src="assets/img/leader-satheesh-dhanabalan.png" alt="Satheesh Kumar Dhanabalan" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 600; color: var(--accent);">Satheesh Kumar Dhanabalan</h3>
+          <div class="mono" style="margin-top: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint);">Director, New Products, Memory Division</div>
+          <a href="https://www.linkedin.com/in/satheeshkumar-dhanabalan-pmp-05179819/" target="_blank" rel="noopener" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 10px; background: var(--accent); border-radius: 3px; color: #fff;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-1 1.83-2.05 3.77-2.05C21.7 8.59 23 10.9 23 14.34V21h-4v-5.8c0-1.38-.02-3.16-1.93-3.16-1.93 0-2.23 1.5-2.23 3.06V21h-4V9Z"></path></svg>
+          </a>
+          <p style="margin-top: 14px; font-size: 14.5px; line-height: 1.7; color: var(--text-dim);">At ForwardEdge ASIC, Satheesh leads new product development (NPI) for memory interface IC programs, along with foundry operations and customer engagement. Prior to ForwardEdge ASIC, he held leadership roles at Rambus, GlobalFoundries, and Micron Technology, with a proven track record of driving multiple programs from design through qualification and mass production, leading cross-functional teams and executing successful process transfers. His experience spans technical program management, design enablement, NAND device and process integration, customer interface, and yield engineering — working with leading foundries including TSMC and GlobalFoundries. Satheesh holds an M.S. in Electrical Engineering from the National University of Singapore and an Advanced Certificate in Applied AI &amp; Machine Learning from IIT Madras.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
