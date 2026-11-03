@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제품 — ForwardEdge ASIC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Heebo:wght@500;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../assets/img/fea-logo.png">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-row">
+        <a href="https://forwardedgeasic.com/" class="brand-link" target="_blank" rel="noopener">
+          <img src="../assets/img/fea-logo.png" alt="ForwardEdge ASIC">
+          <span class="brand-name"><span class="fw">ForwardEdge</span><span class="asic">ASIC</span></span>
+        </a>
+        <span class="brand-division">메모리 사업부</span>
+      </div>
+      <span class="brand-tag">록히드마틴 계열사</span>
+    </div>
+    <nav class="nav-desktop">
+      <a href="index.html">회사 소개</a>
+      <a href="products.html" class="active">제품</a>
+      <a href="blogs.html">블로그</a>
+      <a href="../products.html" style="color: var(--text-faint); font-size: 13.5px;">EN</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 18px;">문의하기</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+  </div>
+  <div class="nav-mobile-panel">
+    <a href="index.html" class="nav-mobile-link">회사 소개</a>
+    <a href="products.html" class="nav-mobile-link">제품</a>
+    <a href="blogs.html" class="nav-mobile-link">블로그</a>
+    <a href="../products.html" class="nav-mobile-link">EN</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:14px; justify-content:center;">문의하기</a>
+  </div>
+</header>
+<div class="header-spacer"></div>
+
+<section style="padding: 64px 0;">
+  <div class="container">
+    <div class="eyebrow">제품</div>
+    <h1 style="font-size: clamp(28px, 3.6vw, 38px); margin-top: 12px; max-width: 640px;">DDR5 메모리 인터페이스 실리콘, 더 많은 제품이 준비되어 있습니다.</h1>
+
+    <div class="mono" style="margin-top: 40px; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint);">DDR5 클라이언트 및 서버 칩셋</div>
+
+    <div style="display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; align-items: center;">
+      <input type="text" id="productFilterSearch" placeholder="제품 검색..." style="background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 10px 14px; font-family: inherit; font-size: 14px; color: var(--text); min-width: 220px; flex: 1;">
+      <select id="productFilterStatus" style="background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 10px 14px; font-family: inherit; font-size: 14px; color: var(--text);">
+        <option value="">전체 상태</option>
+        <option value="active">활성</option>
+        <option value="development">개발 중</option>
+      </select>
+    </div>
+
+    <div class="card reveal" style="margin-top: 16px; overflow: hidden; overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; min-width: 1040px;">
+        <thead>
+          <tr style="background: var(--bg-soft); text-align: left;">
+            <th class="mono" style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">부품 번호</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">제품</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">기능</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">응용 분야</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">샘플</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">상태</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">데이터시트</th>
+            <th style="padding: 14px 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 600;">제품 브리프</th>
+            <th style="padding: 14px 20px;"></th>
+          </tr>
+        </thead>
+        <tbody id="productsTableBody">
+          <tr style="border-top: 1px solid var(--border);" data-status="active">
+            <td class="mono" style="padding: 18px 20px; font-size: 13.5px; color: var(--text-dim);">SPD5118</td>
+            <td style="padding: 18px 20px; font-size: 14.5px;"><a href="spd5.html" class="table-link">SPD5 — 내장 온도 센서 탑재 SPD 허브</a></td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">DDR5 SPD 허브</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">서버 및 클라이언트</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">제공 가능</td>
+            <td style="padding: 18px 20px;"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim);"><span style="width: 8px; height: 8px; border-radius: 50%; background: #2E8B57; display: inline-block;"></span>활성</span></td>
+            <td style="padding: 18px 20px;"><span class="doc-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a2 2 0 0 1 2-2h8l6 6v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path><path d="M14 5v5h5"></path></svg>준비 중</span></td>
+            <td style="padding: 18px 20px;"><a href="contact.html?product=spd5118#brief" class="table-link" style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4"></path><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path></svg>다운로드</a></td>
+            <td style="padding: 18px 20px;"></td>
+          </tr>
+          <tr style="border-top: 1px solid var(--border);" data-status="active">
+            <td class="mono" style="padding: 18px 20px; font-size: 13.5px; color: var(--text-dim);">TS5110</td>
+            <td style="padding: 18px 20px; font-size: 14.5px;"><a href="ts5.html" class="table-link">TS5 — DDR5 온도 센서</a></td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">DDR5 온도 센서</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">서버</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">제공 가능</td>
+            <td style="padding: 18px 20px;"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim);"><span style="width: 8px; height: 8px; border-radius: 50%; background: #2E8B57; display: inline-block;"></span>활성</span></td>
+            <td style="padding: 18px 20px;"><span class="doc-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a2 2 0 0 1 2-2h8l6 6v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path><path d="M14 5v5h5"></path></svg>준비 중</span></td>
+            <td style="padding: 18px 20px;"><a href="contact.html?product=ts5110#brief" class="table-link" style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4"></path><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path></svg>다운로드</a></td>
+            <td style="padding: 18px 20px;"></td>
+          </tr>
+          <tr style="border-top: 1px solid var(--border);" data-status="development">
+            <td class="mono" style="padding: 18px 20px; font-size: 13.5px; color: var(--text-dim);">DDR5RCD06</td>
+            <td style="padding: 18px 20px; font-size: 14.5px; color: var(--text);">DDR5 6세대 레지스터링 클럭 드라이버 (RCD)</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">9600 MT/s 레지스터링 클럭 드라이버</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">서버</td>
+            <td style="padding: 18px 20px; font-size: 14px; color: var(--text-dim);">진행 중</td>
+            <td style="padding: 18px 20px;"><span style="display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-dim);"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--text-faint); display: inline-block;"></span>개발 중</span></td>
+            <td style="padding: 18px 20px;"><span class="doc-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a2 2 0 0 1 2-2h8l6 6v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path><path d="M14 5v5h5"></path></svg>준비 중</span></td>
+            <td style="padding: 18px 20px;"><span class="doc-placeholder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7a2 2 0 0 1 2-2h8l6 6v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path><path d="M14 5v5h5"></path></svg>준비 중</span></td>
+            <td style="padding: 18px 20px;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p id="productFilterCount" style="margin-top: 16px; font-size: 13px; color: var(--text-faint);">2개 중 2개 제품 표시 중</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-fine">© 2026 Memory Interface Silicon, ForwardEdge ASIC의 사업부입니다.</span>
+    <a href="https://forwardedgeasic.com/" class="footer-fine">forwardedgeasic.com</a>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

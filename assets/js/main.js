@@ -34,7 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (show) visible++;
     });
 
-    if (count) count.textContent = visible + ' of ' + rows.length + ' products shown.';
+    if (count) {
+      var isKo = document.documentElement.lang === 'ko';
+      count.textContent = isKo
+        ? (rows.length + '개 중 ' + visible + '개 제품 표시 중')
+        : (visible + ' of ' + rows.length + ' products shown.');
+    }
   }
 
   search.addEventListener('input', applyFilter);
